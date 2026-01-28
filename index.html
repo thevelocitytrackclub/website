@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Velocity Track Club</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
@@ -17,132 +16,118 @@
     }
 
     body {
-      background: #f8f9fb;
+      background: #f6f7fb;
       color: #1f2937;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     header {
-      background: linear-gradient(135deg, #111827, #2563eb);
+      background: linear-gradient(135deg, #0f172a, #2563eb);
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
     header h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       opacity: 0.9;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     section {
       background: white;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      padding: 35px;
+      margin-bottom: 35px;
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      border-bottom: 3px solid #2563eb;
-      display: inline-block;
-      padding-bottom: 5px;
+      font-size: 1.9rem;
+      margin-bottom: 16px;
+      color: #2563eb;
     }
 
     p {
-      margin-bottom: 10px;
       font-size: 1.05rem;
+      margin-bottom: 12px;
     }
 
     .schedule {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
     }
 
     .schedule div {
-      background: #f1f5f9;
-      padding: 15px;
-      border-radius: 10px;
-      font-weight: 500;
+      background: #eef2ff;
+      padding: 18px;
+      border-radius: 12px;
       text-align: center;
+      font-weight: 600;
     }
 
-    .staff-grid {
+    .staff {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
 
-    .staff-card {
+    .card {
       background: #f9fafb;
-      padding: 20px;
-      border-radius: 12px;
+      padding: 22px;
+      border-radius: 14px;
       text-align: center;
     }
 
-    .staff-card h3 {
-      color: #2563eb;
-      margin-bottom: 5px;
+    .card h3 {
+      color: #1d4ed8;
+      margin-bottom: 6px;
     }
 
     .buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 15px;
+      gap: 16px;
+      margin-top: 20px;
     }
 
     .buttons a {
-      text-decoration: none;
       background: #2563eb;
       color: white;
-      padding: 12px 18px;
-      border-radius: 8px;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 10px;
       font-weight: 600;
-      transition: background 0.2s ease;
+      transition: 0.2s ease;
     }
 
     .buttons a:hover {
       background: #1d4ed8;
     }
 
-    .note {
-      font-size: 0.9rem;
-      color: #6b7280;
-      margin-top: 10px;
-    }
-
     footer {
       text-align: center;
-      padding: 20px;
-      color: #6b7280;
+      padding: 25px;
       font-size: 0.9rem;
+      color: #6b7280;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
       }
     }
   </style>
@@ -152,71 +137,81 @@
 
 <header>
   <h1>Velocity Track Club</h1>
-  <p>Youth Development • Speed • Endurance • Discipline</p>
+  <p>Youth Track & Field • Speed • Endurance • Development</p>
 </header>
 
 <div class="container">
 
-  <!-- Mission -->
+  <!-- ABOUT -->
   <section>
-    <h2>Our Mission</h2>
+    <h2>About Velocity</h2>
     <p>
-      Velocity Track Club is a youth-led training organization focused on developing
-      athletes through structured workouts, discipline, and a love for the sport.
-      We emphasize long-term growth, proper technique, and competitive excellence.
+      Velocity Track Club is a student-led youth track and field program focused on
+      long-term athlete development. We provide structured training for sprinters,
+      mid-distance, and distance runners in a supportive and disciplined environment.
     </p>
   </section>
 
-  <!-- Practices -->
+  <!-- PRACTICES -->
   <section>
     <h2>Practice Schedule</h2>
     <div class="schedule">
-      <div>Monday & Wednesday<br><strong>5:00 – 6:30 PM</strong></div>
-      <div>Saturday<br><strong>10:00 – 11:30 AM</strong></div>
+      <div>
+        Monday & Wednesday<br>
+        <strong>5:00 – 6:30 PM</strong>
+      </div>
+      <div>
+        Saturday<br>
+        <strong>10:00 – 11:30 AM</strong>
+      </div>
     </div>
-    <p class="note">Training groups are split by age and experience.</p>
+    <p style="margin-top:12px;">
+      Practices are held at Cypress College Track. Groups are organized by age and experience.
+    </p>
   </section>
 
-  <!-- Staff -->
+  <!-- STAFF -->
   <section>
     <h2>Staff</h2>
-    <div class="staff-grid">
-      <div class="staff-card">
+    <div class="staff">
+      <div class="card">
         <h3>Krish Arora</h3>
-        <p><strong>Distance / Mid-Distance Coach</strong></p>
+        <p><strong>Distance & Mid-Distance Coach</strong></p>
       </div>
-      <div class="staff-card">
+      <div class="card">
         <h3>Jaybenny Quiroz</h3>
-        <p><strong>Sprint Coach / Jumps Coach</strong></p>
+        <p><strong>Sprint & Jumps Coach</strong></p>
       </div>
-      <div class="staff-card">
+      <div class="card">
         <h3>Jaden Adhavan</h3>
-        <p><strong>Sprints / Hurdles Coach</strong></p>
+        <p><strong>Sprints & Hurdles Coach</strong></p>
       </div>
-      <div class="staff-card">
+      <div class="card">
         <h3>Anthony Phan</h3>
         <p><strong>Social Media Manager</strong></p>
       </div>
     </div>
   </section>
 
-  <!-- Join -->
+  <!-- JOIN -->
   <section>
-    <h2>Join Velocity</h2>
-    <p>Sign up and stay connected through our official platforms.</p>
+    <h2>Join the Team</h2>
+    <p>
+      Interested in training with Velocity? Use the links below to sign up and stay connected.
+    </p>
     <div class="buttons">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCstVYJBYopQQ_SegRw95_-zQoUYJbFGg0fPxv5w-V8cw9ww/viewform" target="_blank">
-        Signup Form
+        Athlete Signup Form
       </a>
       <a href="https://www.band.us/n/a2a3b1Tew05as" target="_blank">
-        Join Team Chat
+        Join Team Chat Group
       </a>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- CONTACT -->
   <section>
-    <h2>Contact Us</h2>
+    <h2>Contact</h2>
     <p><strong>Email:</strong> thevelocitytrackclub@gmail.com</p>
     <p><strong>Phone:</strong> 562-335-3830</p>
   </section>
