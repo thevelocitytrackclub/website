@@ -17,16 +17,11 @@ function updateCountdown() {
   const now = new Date().getTime();
   const distance = meetDate - now;
 
-  if (distance < 0) {
-    document.getElementById("countdown").innerHTML = "Meet Day 🔥";
-    return;
-  }
-
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
   document.getElementById("countdown").innerHTML =
-    `${days}d ${hours}h remaining`;
+    `${days}d ${hours}h until next meet`;
 }
 
 setInterval(updateCountdown, 1000);
