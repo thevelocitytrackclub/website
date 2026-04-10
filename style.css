@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background: #f4f6f8;
   color: #222;
 }
@@ -61,11 +56,19 @@ header {
   display: block;
 }
 
-/* MEETS */
+/* MEET BOX */
 .meet {
   background: #eef2ff;
   padding: 12px;
   border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* COUNTDOWN */
+#countdown {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
   margin: 10px 0;
 }
 
@@ -79,19 +82,4 @@ header {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-}
-
-/* VIDEO */
-.video {
-  width: 100%;
-  margin-top: 15px;
-  border-radius: 12px;
-}
-
-/* COUNTDOWN */
-#countdown {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #2563eb;
-  margin: 10px 0;
 }
